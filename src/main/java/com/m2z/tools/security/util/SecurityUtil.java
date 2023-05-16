@@ -7,6 +7,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class SecurityUtil {
 
+    public static String ROLE_ROOT = "ROLE_ROOT";
+
+    public static String ROLE_ADMIN = "ROLE_ADMIN";
+
     private static <T extends UserDetails> T transformPrinciple(Object auth, Class<T> cls) {
         if (cls.isInstance(auth)) {
             return cls.cast(auth);
