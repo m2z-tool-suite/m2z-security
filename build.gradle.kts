@@ -1,9 +1,6 @@
-import org.springframework.boot.gradle.tasks.bundling.BootJar
-
 plugins {
     java
     application
-    id("org.springframework.boot") version "3.0.0"
     id("pl.allegro.tech.build.axion-release") version "1.14.0"
     `maven-publish`
 }
@@ -46,18 +43,7 @@ publishing {
             artifactId = "security"
             version = scmVersion.version
 
-//            from()
-        }
-//        pom {
-//
-//        }
-        repositories {
+            from(components["java"])
         }
     }
 }
-
-val jar: Jar by tasks
-val bootJar: BootJar by tasks
-
-bootJar.enabled = false
-jar.enabled = true
