@@ -1,6 +1,6 @@
 # M2Z - Backend security library
 
-Security library for Spring REST services which use AWS Cogntio in M2Z Tool Suite 
+Security library for Spring Boot RESTful microservices in M2Z Tool Suite
 
 [![](https://jitpack.io/v/m2z-tool-suite/m2z-security.svg)](https://jitpack.io/#m2z-tool-suite/m2z-security)
 
